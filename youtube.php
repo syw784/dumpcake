@@ -1,5 +1,4 @@
-<?
-/*
+*
 YOUTUBE ADS VIDEO HOST BLOCK RULE GENERATOR v1.0
 Created by CryptoYakari
 02.01.2020
@@ -36,5 +35,3 @@ for ($x = 2; $x <= count($my_array)-1; $x++) {
 echo 'local-data: "' . $my_array[$x] . ' A 127.0.0.1"'."\n";
 $x = $x + 1;
 } //for end
-
-?>
