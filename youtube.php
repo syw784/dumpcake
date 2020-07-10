@@ -1,4 +1,4 @@
-*
+/*
 YOUTUBE ADS VIDEO HOST BLOCK RULE GENERATOR v1.0
 Created by CryptoYakari
 02.01.2020
