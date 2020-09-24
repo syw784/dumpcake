@@ -1,0 +1,35 @@
+//to be used with ImageJ + Hitachi HT7700 TEM scope images; HT7700 stores magnification kx in fileinfo, or ImageJ's getImageInfo along with a bunch of other garbage. then its just file parsing 101
+//this thing reads that mag kx, convert to a pix-nm ratio, set the scale, add a scale bar, and save it so you dont have to. I met people did this with powerpoint's draw box, combine and paste, i wish i made this earlier to save Spencer's time than the finger numbing powerpoint trick.
+//I put this stuff in imagej's startup macros so I dont have to load it manually
+
+ macro "HitachiScale" {
+	IJ.redirectErrorMessages();
+	a = parseInt(substring(getImageInfo(), indexOf(getImageInfo(), "Magnification=") + 14, indexOf(getImageInfo(), "AcceralatingVoltage")));
+	scalePix1nm = 0.09236725974 * a / 1000 ;
+	run("Set Scale...", "distance=" + scalePix1nm +" known=1 pixel=1 unit=inch");
+	 
+ }
+
+ macro "100nmScaleBar" {
+	run("Scale Bar...", "width=100 height=36 font=56 color=White background=None location=[Lower Right] bold hide"); //100 = scale bar rep. 100 nm
+	makeRectangle(0, 0, getWidth(), getHeight() * 0.95);
+	run("Crop");
+	run("Save");
+	close();
+ }
+
+
+
+ macro "Hitachi100nmScaleBar" {
+	IJ.redirectErrorMessages();
+	a = parseInt(substring(getImageInfo(), indexOf(getImageInfo(), "Magnification=") + 14, indexOf(getImageInfo(), "AcceralatingVoltage")));
+	scalePix1nm = 0.09236725974 * a / 1000 ;
+	run("Set Scale...", "distance=" + scalePix1nm +" known=1 pixel=1 unit=inch");
+	run("Scale Bar...", "width=100 height=36 font=56 color=White background=None location=[Lower Right] bold hide"); //100 = scale bar rep. 100 nm
+	makeRectangle(0, 0, getWidth(), getHeight() * 0.95);
+	run("Crop");
+	//run("Save");
+	saveAs("tiff", "D:\\" + getTitle());//<-------------change this file path to a path of your choice, remember to use double backslash \\
+	close();
+ }
+
