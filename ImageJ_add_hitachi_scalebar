@@ -28,8 +28,7 @@
 	run("Scale Bar...", "width=100 height=36 font=56 color=White background=None location=[Lower Right] bold hide"); //100 = scale bar rep. 100 nm
 	makeRectangle(0, 0, getWidth(), getHeight() * 0.95);
 	run("Crop");
-	//run("Save");
-	saveAs("tiff", "D:\\" + getTitle());//<-------------change this file path to a path of your choice, remember to use double backslash \\
+	run("Save");
 	close();
  }
 
