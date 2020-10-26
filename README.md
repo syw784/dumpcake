@@ -1,6 +1,9 @@
 a collection of failed phd stuff
 -------------------------------
 # selectHeptad:
+
+![Chungus](https://github.com/syw784/dumpcake/raw/master/readme/dfpksdfdfs.PNG)
+
 who thought of the great idea to imagine coiled-coil in head? what a crazy lad.
 1. open a coiled-coil
 
