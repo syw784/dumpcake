@@ -14,8 +14,11 @@ a collection of failed phd stuff
 ![Chungus](https://github.com/syw784/dumpcake/raw/master/readme/hj3.PNG)
 
 4. restart imageJ. open a tif file. only tif file has magnification data stored in. choose a command from plugin -> macro.
-hitachi scale will only set the scale. useful to make measuremetns.
+
+hitachi scale will only set the scale. useful to make measuremetns
+
 100 nm scale bar will only make the scale bar. 
+
 hitachi 100 nm scale bar will make a bar, save, close to make the whole process faster.
 
 ![Chungus](https://github.com/syw784/dumpcake/raw/master/readme/ij4.PNG)
