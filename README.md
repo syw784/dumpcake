@@ -1,6 +1,6 @@
 a collection of failed phd stuff
 -------------------------------
-# imageJ + Hitachi  HT7700 (emory PPMS TEM)
+# imageJ + Hitachi  HT7700
 1. open imageJ -> plugin -> macro -> start up macro
 
 ![Chungus](https://github.com/syw784/dumpcake/raw/master/readme/ij1.PNG)
