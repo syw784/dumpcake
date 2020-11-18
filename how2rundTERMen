@@ -1,0 +1,20 @@
+to run dtermen you first need to get MASTER working; which we have a precompiled binary. dont try this on widows. 
+technically it should work on macs but i cant get something pass compilation on the lab mac, either its mslib or some werid stuff. i dont remember but it just doesnt work.
+then you need a database, the one shipped wiht MASTER binary is pdb in 2014. so if youd liketo include the new shit, download pdb again or somthing
+to download pdb you could try 1. gevrogs method in his video, hwere he searched and downlaoded results. if you want to get the ENTIRE pdb however, 
+get crossFTP (which should be free for emroy but they are not for some reason)
+go to 
+ftp.wwpdb.org
+/pub/pdb/data/structures/all/pdb/
+i believe its all monomers
+HINT! crossFTP enables multithreading. HINT#2! if your computer sucks (where i use USB2.0 external + 11 years old laptop) use something like 8 threads, 
+otherwise drives may have pendign sectors which is a big no no.
+now after several days you have all pdbs in some compressed format. use 7ZIP or winRAR to decompress them. 
+I used WINRAR but for some reason only 90k out of 160k files were decompressed, i think its my old laptop + usb2 external drive's issue. 
+Im using 7ZIP for ubuntu since lab windows doesnt allow installing stuff, thats severely single-threaded and IO limited so its VERY SLOW. ubuntu's native unzip deoesnt work.
+after extraction files are .ent but not pdb, they are the same. i didnt try in master and I used for i in os.listdir, os.rename to change all ent to pdb. 
+you could do batch rename utility for windows. 
+next to run master, do whatever in gevorg's video but use the option to only account for natural amino acids. the thing is many structures contain unnatrural or whatever amino acid,
+and they could NOT have a backbone; if master cant see a backbone ANYWHERE it will discard the entire strcture. I didnt do that and only got 6k converted out of 160k, have to redo.
+
+
