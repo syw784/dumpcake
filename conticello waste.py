@@ -44,7 +44,7 @@ def main(waste = 4):
         dxinput.press(str(waste))
         for i in range(6):
             dxinput.press('tab')
-            dxinput.press(str(waste))
+        dxinput.press(str(waste))
         for i in range(4):
             dxinput.press('tab')
     
