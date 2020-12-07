@@ -86,3 +86,6 @@ why spend 5 hours automating this crap when you can make histograms in igor with
 7. a "professional" garph is made
 
 ![Chungus](https://github.com/syw784/dumpcake/raw/master/readme/4324234234322.PNG)
+
+# conticelloWaste:
+a python script to open Emory EHSO waste pickup and fill in the necessary information, so you dont have to. change my info out, of course, so ehso doesnt email to my ghost account.
